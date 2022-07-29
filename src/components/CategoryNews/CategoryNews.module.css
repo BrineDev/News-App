@@ -1,0 +1,40 @@
+.root{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  border-radius: 6px;
+  /* border: 1px solid #ccc; */
+  margin: 0px auto;
+  width:  500px;
+  overflow: hidden;
+  margin: 10px  20px ;
+  transition: all .2s ease-in-out;
+  position: relative;
+}
+
+.name {
+  font-size: 22px;
+  margin: 2px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px
+}
+
+span {
+  font: 400;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.body {
+  padding: 10px 15px;
+  height: 140px;
+  background-color: #f9f9f9;
+}
