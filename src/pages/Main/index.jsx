@@ -2,9 +2,11 @@ import React from 'react'
 import { getAllNews } from '../../API'
 import cls from './Main.module.css'
 import NewsCard from '../../components/NewsCard'
+import Spiner from '../../components/Spiner'
 
 const Main = () => {
     const [news, setNews] = React.useState([])
+    const [isloading, setIsLoading] = React.useState(true)
 
 
     React.useEffect(() => {
@@ -13,12 +15,13 @@ const Main = () => {
           const data = res.data.articles
 
           setNews(data)
+          setIsLoading(true)
         })
+        .finally(() => setIsLoading(false))
     }, [])
 
-    // console.log(news)
 
-    if (!news) return <h1>Please wait...</h1>
+    if (isloading) return <Spiner />
 
   return (
     <div>

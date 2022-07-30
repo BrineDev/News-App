@@ -1,19 +1,10 @@
 .root{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.box {
   border-radius: 6px;
-  /* border: 1px solid #ccc; */
-  margin: 0px auto;
+  border: 1px solid #ccc;
+  margin: 20px;
   width:  500px;
-  overflow: hidden;
-  margin: 10px  20px ;
-  transition: all .2s ease-in-out;
+  height: 230px;
+  padding: 10px;
   position: relative;
 }
 
@@ -27,14 +18,11 @@ p {
   font-size: 14px
 }
 
-span {
-  font: 400;
+.link {
   position: absolute;
-  right: 5px;
-  bottom: 5px;
-}
-.body {
+  left: 10px;
+  bottom: 10px;
+  color: white;
   padding: 10px 15px;
-  height: 140px;
-  background-color: #f9f9f9;
+  background-color: #000394;
 }

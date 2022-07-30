@@ -1,4 +1,4 @@
-import { React, useEffect,  } from 'react'
+import React  from 'react'
 import cls from './CategoryNews.module.css'
 
 const CategoryNews = ({ categoryInfo }) => {
@@ -13,12 +13,9 @@ const CategoryNews = ({ categoryInfo }) => {
     } = categoryInfo
   return (
     <div className={cls.root}>
-      <div className={cls.box}>
-        <div className={cls.body}>
-          <h2 className={cls.name}>Author - {name} </h2>
+          <h2 className={cls.name}>{name} </h2>
           <p>{description}</p>
-        </div>
-      </div>
+          <a className={cls.link} href={url} target="_blank">Click</a>
     </div>
   )
 }

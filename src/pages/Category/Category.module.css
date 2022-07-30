@@ -1,6 +1,17 @@
-.newsList {
+.root {
+  text-align: center;
+}
+
+.category {
+  margin-top: 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+  
+  .newsList {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
